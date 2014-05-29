@@ -1,8 +1,8 @@
 //
-//  AlertViewController.m
+//  testViewController.m
 //  Assessment
 //
-//  Created by BSA univ 1 on 26/05/14.
+//  Created by BSA univ 6 on 26/05/14.
 //  Copyright (c) 2014 hibrise. All rights reserved.
 //
 
@@ -100,7 +100,7 @@ bool isShown = false;
 - (void)fetch {
     AppDelegate *appdelegate =(AppDelegate*)[[UIApplication sharedApplication]delegate];
     NSEntityDescription *entity=[NSEntityDescription entityForName:@"Contact" inManagedObjectContext:appdelegate.managedObjectContext];
-//    NSEntityDescription *entity =[NSEntityDescription insertNewObjectForEntityForName:@"Contact" inManagedObjectContext:appdelegate.managedObjectContext];
+
     NSFetchRequest *fetch=[[NSFetchRequest alloc]init];
     [fetch setEntity:entity];
     NSMutableArray *get=[[appdelegate.managedObjectContext executeFetchRequest:fetch error:nil] mutableCopy];
